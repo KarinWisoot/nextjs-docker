@@ -1,10 +1,13 @@
+import Time from "./components/time";
+import Login from "./components/login";
+import Register from "./components/register";
 
 export default function Home() {
   return (
     <div>
-      <h1>
-        test
-      </h1>
+      <Time />
+      {/* <Login />
+      <Register /> */}
     </div>
   );
 }
