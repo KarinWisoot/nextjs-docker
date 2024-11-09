@@ -1,13 +1,12 @@
+"use client";
 import Time from "./components/time";
-import Login from "./components/login";
-import Register from "./components/register";
 
 export default function Home() {
   return (
-    <div>
-      <Time />
-      {/* <Login />
-      <Register /> */}
+    <div className="flex justify-center items-center min-h-screen">
+      <div>
+        <Time />
+      </div>
     </div>
   );
 }

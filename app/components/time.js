@@ -2,13 +2,14 @@
 
 import { useState, useEffect } from "react";
 
-export default function Home() {
+export default function Time() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
     // ตั้ง Timer ให้รันทุกวินาที
     const timer = setInterval(() => {
-      setTime(new Date());
+      const newTime = new Date(); // เรียกใช้เวลาใหม่ทุกวินาที
+      setTime(newTime); // อัปเดตเวลาให้ตรงกับระบบ
     }, 1000);
 
     // เคลียร์ Timer เมื่อ component ถูกทำลาย
